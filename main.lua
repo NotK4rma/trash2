@@ -442,7 +442,7 @@ local HPHalf = bJ:Toggle({ Text = "HP-Half Fly", TextSize = 22, TextColor = Colo
         for aA, B in pairs(_) do if game.PlaceId ~= B and al.HPHalf then H.Character.HealthProperties.Health
                     :GetPropertyChangedSignal('Value'):Connect(function() pcall(function()
                         if IsAlive() and H.Character.HealthProperties.Health.Value / H.Character.HealthProperties.MaxHealth.Value * 100 <= 100 then
-                            a6, a7, a4, a9 = 50, 40, 1, 3; repeat wait(1) until H.Character.HealthProperties.Health.Value / H.Character.HealthProperties.MaxHealth.Value * 100 > 90; if aC() then a6, a7, a9 =
+                            a6, a7, a4, a9 = 50, 40, 1, 3; repeat wait(1) until H.Character.HealthProperties.Health.Value / H.Character.HealthProperties.MaxHealth.Value * 100 > 100; if aC() then a6, a7, a9 =
                                 36, 30, 6 elseif ay() then a6, a7, a9 = .1, 14, 5 end
                         end; if al.HPHalf == false then H.Character.HealthProperties.Health:GetPropertyChangedSignal(
                             'Value'):Disconnect() end
